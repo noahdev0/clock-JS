@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6e6969;
+  user-select: none;
+}
+body .clock {
+  height: 250px;
+  width: 250px;
+ 
+background: rgba(255, 255, 255, 0.12);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.3px);
+-webkit-backdrop-filter: blur(5.3px);
+  border-radius: 50%;
+}
+body .clock .clicker1 {
+  width: 115px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: rotateZ(270deg) translate(-50%, -50%);
+  transform-origin: center left;
+  background-color: rgb(185, 172, 172);
+  outline: white;
+  height: 2px;
+}
+body .clock .clicker2 {
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: rotateZ(270deg) translate(-50%, -50%);
+  transform-origin: center left;
+  background-color: rgb(177, 170, 170);
+  outline: white;
+  height: 2px;
+}
+body .clock .clicker3 {
+  width: 70px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: rotateZ(270deg) translate(-50%, -50%);
+  transform-origin: center left;
+  background-color: rgb(177, 170, 170);
+  outline: white;
+  height: 2px;
+}
+
+.cl1, Cl2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: -50% -50%;
+}
+
+.cl1 {
+  z-index: 4;
+}
+.cl1::after {
+  content: "";
+  color: aliceblue;
+  position: relative;
+  bottom: 119px;
+  right: 34px;
+  font-size: 30px;
+}
+.cl1::before {
+  content: "";
+  color: aliceblue;
+  position: relative;
+  bottom: -82px;
+  right: 7px;
+  font-size: 30px;
+}
+
+.cl2 {
+  z-index: 5;
+}
+.cl2::after {
+  content: "";
+  color: aliceblue;
+  position: relative;
+  right: -63px;
+  top: -19px;
+}
+.cl2::before {
+  content: "";
+  color: aliceblue;
+  position: relative;
+  right: 110px;
+  top: -19px;
+}/*# sourceMappingURL=main.css.map */
